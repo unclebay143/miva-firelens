@@ -1,9 +1,23 @@
-# FireLens frontend handoff
+# FireLens frontend
 
-This folder supplies static data for your Figma-based UI; no frontend framework
-is installed. Copy `public/data` into your application's public directory.
+Vite + React calendar UI for the verified Kaduna weekly detection handoff.
+Run from this folder:
+
+```bash
+npm install
+npm run dev
+```
+
+Static JSON lives in `public/data` (copied into the build as `/data/*.json`).
 All counts derive from the verified real Kaduna standard archives. No raw NASA
 downloads, NRT records, corrected counts or fitted model are included here.
+
+## Presentation
+
+The primary view is a NASA FIRMS–inspired **ISO-week heatmap** (year × week)
+with separate MODIS and VIIRS layers, a thermal color ramp, gray gaps for
+unknown exposure, log/linear scale, and a week inspector. Seasonal paired-week
+ratios appear below the fold as descriptive context only.
 
 ## Files
 
